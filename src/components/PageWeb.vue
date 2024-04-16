@@ -1,6 +1,6 @@
 <template>
-  <nav class="navbar">
-    <ul class="list">
+  <nav>
+    <ul>
       <li>Inicio</li>
       <li>Ver Más</li>
       <li>Resumen</li>
@@ -9,33 +9,33 @@
       <li>Contactenos</li>
     </ul>
   </nav>
-  <div class="header">
+  <div class="">
     <h1>FRAMEWORKS DE DESARROLLO DE JAVASCRIPT</h1>
     <p>Conoce los principales frameworks de desarrollo de JavaScript</p>
     <a href="http://">Ver Más</a>
   </div>
-  <div class="content-cards">
-    <div class="cards">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1200px-Vue.js_Logo_2.svg.png" alt="">
+  <div class="">
+    <div class="">
+      <i class="fa-brands fa-vuejs"></i>
       <h3>Vue</h3>
       <p>Framework progresivo para construir interfaces de usuario interactivas y aplicaciones de una sola página, con
         un enfoque gradual y herramientas para el desarrollo de componentes reutilizables.</p>
     </div>
-    <div class="cards">
-      <img src="https://styles.redditmedia.com/t5_2su6s/styles/communityIcon_4g1uo0kd87c61.png" alt="">
+    <div>
+      <i class="fa-brands fa-react"></i>
       <h3>React</h3>
       <p>Biblioteca para construir interfaces de usuario interactivas, desarrollada por Facebook, enfocada en
         componentes reutilizables y unidireccionalidad de datos.</p>
     </div>
-    <div class="cards">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Angularjsoldicon.png" alt="">
+    <div>
+      <i class="fa-brands fa-angular"></i>
       <h3>Angular</h3>
       <p>Framework desarrollado por Google para construir aplicaciones web de una sola página y aplicaciones web
         progresivas, utilizando TypeScript y proporcionando un conjunto completo de características para el desarrollo
         web, como enrutamiento, gestión de formularios e inyección de dependencias.</p>
     </div>
-    <div class="cards">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Electron_Software_Framework_Logo.svg/1200px-Electron_Software_Framework_Logo.svg.png" alt="">
+    <div>
+      <i class="fa-solid fa-atom"></i>
       <h3>Electron</h3>
       <p>Framework para crear aplicaciones de escritorio multiplataforma utilizando tecnologías web como HTML, CSS y
         JavaScript, permitiendo a los desarrolladores crear aplicaciones de escritorio con habilidades y herramientas
@@ -51,40 +51,33 @@
   </div>
   <div>
     <div>
-      <p>React:
+<p>React:
 
-        Fecha de lanzamiento inicial: Marzo de 2013.
-        Desarrollador principal: Facebook.
-        Popularidad: Es uno de los frameworks más populares para el desarrollo de interfaces de usuario, con una gran
-        comunidad de desarrolladores y una amplia adopción en la industria.
-        Empresas que lo utilizan: Facebook, Instagram, Netflix, Airbnb, WhatsApp, entre otros.
-        Vue:
+Fecha de lanzamiento inicial: Marzo de 2013.
+Desarrollador principal: Facebook.
+Popularidad: Es uno de los frameworks más populares para el desarrollo de interfaces de usuario, con una gran comunidad de desarrolladores y una amplia adopción en la industria.
+Empresas que lo utilizan: Facebook, Instagram, Netflix, Airbnb, WhatsApp, entre otros.
+Vue:
 
-        Fecha de lanzamiento inicial: Febrero de 2014.
-        Desarrollador principal: Evan You.
-        Popularidad: Ha experimentado un rápido crecimiento en popularidad debido a su curva de aprendizaje suave y su
-        flexibilidad. Es considerado uno de los frameworks más fáciles de aprender.
-        Empresas que lo utilizan: Alibaba, Xiaomi, Baidu, Adobe, Nintendo, entre otros.
-        Electron:
+Fecha de lanzamiento inicial: Febrero de 2014.
+Desarrollador principal: Evan You.
+Popularidad: Ha experimentado un rápido crecimiento en popularidad debido a su curva de aprendizaje suave y su flexibilidad. Es considerado uno de los frameworks más fáciles de aprender.
+Empresas que lo utilizan: Alibaba, Xiaomi, Baidu, Adobe, Nintendo, entre otros.
+Electron:
 
-        Fecha de lanzamiento inicial: Mayo de 2013.
-        Desarrollador principal: GitHub (anteriormente conocido como Atom Shell).
-        Popularidad: Ha ganado popularidad como una opción para desarrollar aplicaciones de escritorio multiplataforma
-        debido a su simplicidad y la posibilidad de utilizar tecnologías web estándar.
-        Aplicaciones populares construidas con Electron: Slack, Discord, Visual Studio Code, Twitch, Skype, entre otros.
-        Angular:
+Fecha de lanzamiento inicial: Mayo de 2013.
+Desarrollador principal: GitHub (anteriormente conocido como Atom Shell).
+Popularidad: Ha ganado popularidad como una opción para desarrollar aplicaciones de escritorio multiplataforma debido a su simplicidad y la posibilidad de utilizar tecnologías web estándar.
+Aplicaciones populares construidas con Electron: Slack, Discord, Visual Studio Code, Twitch, Skype, entre otros.
+Angular:
 
-        Fecha de lanzamiento inicial: Septiembre de 2016 (Angular 2, la versión original de Angular fue lanzada en
-        2010).
-        Desarrollador principal: Equipo de Angular en Google.
-        Popularidad: Es un framework ampliamente utilizado para la construcción de aplicaciones web empresariales debido
-        a su robustez y las características que proporciona.
-        Empresas que lo utilizan: Google, Microsoft, Deutsche Bank, Forbes, PayPal, entre otros.</p>
+Fecha de lanzamiento inicial: Septiembre de 2016 (Angular 2, la versión original de Angular fue lanzada en 2010).
+Desarrollador principal: Equipo de Angular en Google.
+Popularidad: Es un framework ampliamente utilizado para la construcción de aplicaciones web empresariales debido a su robustez y las características que proporciona.
+Empresas que lo utilizan: Google, Microsoft, Deutsche Bank, Forbes, PayPal, entre otros.</p>
     </div>
     <div>
-      <img
-        src="https://www.orangemantra.com/blog/wp-content/uploads/2019/10/Top-7-Best-Javascript-Frameworks-to-Choose-in-2023.png"
-        alt="">
+<img src="https://www.orangemantra.com/blog/wp-content/uploads/2019/10/Top-7-Best-Javascript-Frameworks-to-Choose-in-2023.png" alt="">
     </div>
   </div>
   <div>
@@ -143,53 +136,13 @@
 <script>
 export default {
   name: 'PageWeb',
-  // components: {
-  //   PageWeb
-  // }
-}
+  data() {
+    return {
+      titulo: 'Bienvenido a mi componente',
+      descripcion: 'Este es un ejemplo de un componente Vue.js'
+    };
+  }
+};
 </script>
 
-<style>
-#app {
-  /* font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px; */
-}
-
-.navbar {
-  display: inline-block;
-}
-
-.list {
-  list-style: none;
-  justify-content: center;
-}
-
-.header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.content-cards {
-  display: flex;
-  justify-content: space-between;
-}
-
-.cards {
-
-}
-
-.cards img {
-  width: 5em;
-  height: 5em;
-  transition: .5s ease-in-out;
-}
-
-.cards::hover {
-box-shadow: rgba(12, 11, 11, 0.226);
-}
-</style>
+<style></style>
